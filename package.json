@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bcabanes/angular-image-cropper.git"
+    "url": "https://github.com/doonot/angular-image-cropper.git"
   },
   "keywords": [
     "angularjs",
@@ -32,7 +32,7 @@
     "responsive",
     "fluid"
   ],
-  "author": "Benjamin Cabanes <contact@benjamincabanes.com> (http://benjamincabanes.com/)",
+  "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bcabanes/angular-image-cropper/issues"
@@ -57,9 +57,9 @@
     "karma-phantomjs-launcher": "1.0.0",
     "karma-webpack": "1.7.0",
     "mocha": "2.4.5",
-    "node-sass": "3.4.2",
+    "node-sass": "4.5.3",
     "phantomjs-prebuilt": "2.1.4",
-    "sass-loader": "3.1.2",
+    "sass-loader": "^4",
     "semantic-release": "^4.3.5",
     "style-loader": "0.13.0",
     "webpack": "1.12.12",
