@@ -239,11 +239,13 @@ Cropper.prototype.changeImage = function(newImageUrl) {
 };
 
 Cropper.prototype.loadImage = function() {
+  //console.log("loadImage called.");
   var self = this;
   var xhr;
 
   // XMLHttpRequest disallows to open a Data URL in some browsers like IE11 and Safari.
   if (/^data\:/.test(this.originalUrl)) {
+    console.log("loading " + this.originalUrl);
     this.originalBase64 = this.originalUrl;
     return this.setupImageSRC();
   }
@@ -271,6 +273,8 @@ Cropper.prototype.loadImage = function() {
  */
 Cropper.prototype.setupImageSRC = function() {
   var _image = this.elements.image;
+
+  //console.log("setup image src: ", _image);
 
   if (this.options.checkCrossOrigin && this.isCrossOrigin(this.originalUrl)) {
     this.crossOrigin = _image.crossOrigin;

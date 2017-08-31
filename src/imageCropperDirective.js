@@ -29,10 +29,8 @@ module.exports = function (angular, Cropper) {
 					this.api = new Cropper(self);
 
 					$scope.$watch('vm.imageUrl', function (newImageUrl, oldImageUrl) {
-						if (angular.isDefined(newImageUrl)
-							&& !angular.equals(newImageUrl, oldImageUrl)
-						) {
-							console.log("change image!!");
+						if (angular.isDefined(newImageUrl) && !angular.equals(newImageUrl, oldImageUrl)) {
+							//console.log("change image, old: " + oldImageUrl +  ", new: " + newImageUrl);
 							self.api.changeImage(newImageUrl);
 						}
 					});
